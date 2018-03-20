@@ -22,7 +22,7 @@ You can use the [editor on GitHub](https://github.com/UCLA-ECE209AS-2018W/Aadith
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 # Approach
-
+<p align="justify">
 The portable dolphin attack was chosen as the means of attack over the table top attack for two major reasons :
 - Low Cost of Implementation
 - Reduced physical Intervention
@@ -34,6 +34,8 @@ According to the analysis in [ ], the cost of implementing the attack through th
 - Samsung S7 Edge  as Attack phone
 - Multiple Smartphones as Victim
 - Ultrasonic transducer (UTR-1440K-TT-R)
+
+</p>
 
 ### Markdown
 
