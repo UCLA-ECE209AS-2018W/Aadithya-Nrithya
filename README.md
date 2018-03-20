@@ -10,6 +10,10 @@ This is the project website for the course ECE 209 AS. This website contains the
 - Analysis
 - Discussion
 
+# Problem Statement
+
+There is an increasing usage of Speech Recognition systems developed by Google, Amazon, Apple and Microsoft. With fast advancements in Machine Learning, Artificial Intelligence and Embedded Systems, these speech recognition systems are making their way into the common man's home performing the daily tasks. However there always vulnerabilities in any technology such as zero day vulnerabilities or hardware bugs. One such exploitation of the consumer hardware is the non-linearity of the microphones present in the devices. Inaudible sounds (Ultrasonic frequency) can be played using COTF devices to attack these devices by exploiting the above vulnerability. Ultrasonic sounds which are above 20 KHz and completely inaudible, can still be picked up the speech recognition systems in these devices through the non-linearity in the audio circuits. The attack we choose to implement is the portable Dolphin Attack which is less expensive but more intensive to calculate and carry out.   
+
 
 
 You can use the [editor on GitHub](https://github.com/UCLA-ECE209AS-2018W/Aadithya-Nrithya/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
