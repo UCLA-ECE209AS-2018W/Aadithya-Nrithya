@@ -1,4 +1,16 @@
 # Dolphin Attack on Smart Home Systems
+# About 
+
+This is the project website for the course ECE 209 AS. This website contains the necessary material for the project ' Dolphin Attack on Smart Home Systems'. It includes
+- Problem statement
+- Related Work
+- Approach
+- Method
+- Findings
+- Analysis
+- Discussion
+
+
 
 You can use the [editor on GitHub](https://github.com/UCLA-ECE209AS-2018W/Aadithya-Nrithya/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
