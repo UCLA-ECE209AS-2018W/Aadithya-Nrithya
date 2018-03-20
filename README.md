@@ -1,4 +1,4 @@
-Dolphin Attack
+# Dolphin Attack on Smart Home Systems
 
 You can use the [editor on GitHub](https://github.com/UCLA-ECE209AS-2018W/Aadithya-Nrithya/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
