@@ -26,7 +26,15 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 The portable dolphin attack was chosen as the means of attack over the table top attack for two major reasons :
 - Low Cost of Implementation
 - Reduced physical Intervention
-According to the analysis in [ ], the cost of implementing the attack through the portable mode was only a few dollars as opposed to the default table top which involved using expensive Ultrasonic wideband speaker Vifa [ ]
+
+According to the analysis in [ ], the cost of implementing the attack through the portable mode was only a few dollars as opposed to the default table top which involved using expensive Ultrasonic wideband speaker Vifa [ ] and the Vector Signal Generator. The components that are required for carrying out the portable include :
+
+- 3.5 mm Audio Jack pigtail-mono and stereo
+- SparkFun Class-D audio amplifier TPA2005D1
+- Samsung S7 Edge  as Attack phone
+- Multiple Smartphones as Victim
+- Ultrasonic transducer (UTR-1440K-TT-R)
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
