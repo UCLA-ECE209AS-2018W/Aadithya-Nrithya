@@ -61,4 +61,4 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 
 
 # Reference
-[1] 
+[ ] Zhang, Guoming, et al. "Dolphin Attack: Inaudible voice commands." Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security. ACM, 2017.
