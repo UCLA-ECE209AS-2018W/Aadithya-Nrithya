@@ -38,6 +38,7 @@ The DolphinAttack can be accomplished using two methods
 
 <p align="justify">
 This is the original version of the attack, carried out using custom hardware. It consists of :
+  
 - Audio signal source
 - Vector signal generator
 - Vifa ultrasonic speaker
