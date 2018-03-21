@@ -10,10 +10,14 @@ ylabel('Amplitude of Signal');
 title('Original Signal-Amplitude');
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Original Signal FFT %%%%%%%%%%%%%%%%%%%%%%%%%%%
-Y = fft(y,nf);
-f = Fs/2*linspace(0,1,nf/2+1);
+L = length(y);
+NFFT = 2^nextpow2(L); % Next power of 2 from length of myRecording
+Y = fft(y,NFFT)/L;
+f = Fs/2*linspace(0,1,NFFT/2+1);
+%Y = fft(y,nf);
 subplot(322);
-plot(f,abs(Y(1:nf/2+1)));
+plot(f,2*abs(Y(1:NFFT/2+1)));
+axis([0 Fs/2 0 0.01])
 xlabel('Frequency');
 ylabel('FFT of Signal');
 title('Original Signal-FFT');
@@ -50,23 +54,35 @@ ylabel('Amplitude Modulated Signal');
 title('Matlab Inbuilt Modulated Signal Time series');
 
 subplot(324);
-plot(f,abs(AYM(1:nf/2+1)));
+% plot(f,abs(AYM(1:nf/2+1)));
+% xlabel('Frequency');
+% ylabel('FFT of Signal');
+% title('Matlab Inbuilt Modulated Signal FFT');
+ audiowrite('User1originalmod5K.wav',original_modulation,Fs);
+
+AYM = fft(original_modulation,NFFT)/L;
+f = Fs/2*linspace(0,1,NFFT/2+1);
+%Y = fft(y,nf);
+subplot(324);
+plot(f,2*abs(AYM(1:NFFT/2+1)));
+axis([0 Fs/2 0 0.01])
 xlabel('Frequency');
 ylabel('FFT of Signal');
-title('Matlab Inbuilt Modulated Signal FFT');
-audiowrite('User1originalmod5K.wav',original_modulation,Fs);
+title('Matlab Modulated Signal-FFT');
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% Function Amplitude Modulation %%%%%%%%%%%%%%%%
 
 harmonic_modulation = y.*cos(2*pi*Fc*t1)+cos(2*pi*Fc*t1);
-AYM1= fft(harmonic_modulation,nf);
 subplot(325);
 plot(t,harmonic_modulation);
 xlabel('Time');
 title('Harmonic Amplitude Modulated Signal');
 ylabel('Time');
 
+AYM1 = fft(harmonic_modulation,NFFT)/L;
+f = Fs/2*linspace(0,1,NFFT/2+1);
 subplot(326);
-plot(f,abs(AYM1(1:nf/2+1)));
+plot(f,2*abs(AYM1(1:NFFT/2+1)));
+axis([0 Fs/2 0 0.01])
 xlabel('Frequency');
 ylabel('FFT of Signal');
 title('Harmonic Modulated Signal FFT');
