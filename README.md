@@ -13,12 +13,14 @@ This is the [project website](https://ucla-ece209as-2018w.github.io/Aadithya-Nri
 # Problem Statement
 <p align="justify">
 There is an increasing usage of Speech Recognition systems developed by Google, Amazon, Apple and Microsoft in Mobile Phones, Laptops and more recently smart home devices. With fast advances in Machine Learning, Artificial Intelligence and Embedded Systems, these speech recognition systems are making their way into the common man's home, performing everyday tasks [1]. However there always vulnerabilities in any technology. One such vulnerability that can be exploited to a attacker's advantage is the non-linearity of the microphones present in the COTS devices. Inaudible sounds (Ultrasonic frequency) can used to attack these devices by exploiting the above vulnerability. Ultrasonic sounds which are above 20 KHz and completely inaudible, can still be picked up the speech recognition systems in these devices through the non-linearity of the audio circuits. The original low frequency components used to modulate the ultrasound carrier are demodulated and interpreted by the SR systems due to this effect. The attack we choose to implement is the portable Dolphin Attack which involves attacking mobile phones and laptops by transmitting attack commands from a smart phone over a ultrasonic transducer. This attack is relatively inexpensive and can be launched on the go. The damage that can be caused to the user can be both mental and monetary. Dolphin commands can be used to accomplish benign tasks like prank calls,order takeouts, schedule Uber and range upto malicious monetary transcations. We analyse the feasibility of carrying out the portable Dolphin attack and evaluate the results. 
+  
 </p>
 
 # Related Work
 
 <p align="justify">
 Traditionally, several techniques have been used to attack Speech Recognition and Voice Control Systems. An interesting attack on the early generation Alexa in Amazon Echo was entirely unintentional [2] NPR's weekend edition broadcast a listen up section about Alexa which prompted a number of these devices to respond to the story by turning up the thermostat and shopping online. Carlini et al., chose to attack the speech recognition system by hiding the attack commands such that they can be deciphered by the system but remain incomprehensible to the user [3]. This attack is accomplished in both scenarios, when the attackers have knowledge of the SR system's internal structure and when they do not. This work is based on the work of Vaidya et al in mangling normal input commands using an audio mangler which converts them into morphed sounds which retain the acoustic features of the key words [4]. In CommanderSong, attack commands are embedded in songs which are then used to attack the voice control systems. The wireless channel may also be utilized for command injection [5]. Chaouki et al show that specific electromagnetic signals can be coupled with the headphones used with smartphones in order to inject voice commands to the speech recognition systems. The attack closest to the Dolphin attack is the Backdoor Attack [6]. Here, two ultrasonic signals, one carrying the attack command and another pilot tone used for original signal reconstruction are transmitted to the receiver. The microphone non linearities are ultilized to recover the original attack command and activate the speech recognition system. The Dolphin attack is superior to the above approaches in that it can be accomplished without being noticed by the user, without any commodity hardware and is relatively inexpensive.
+  
 </p>
 
 # Approach
@@ -40,6 +42,7 @@ This is the original version of the attack, carried out using custom hardware. I
 - Vifa ultrasonic speaker
 
 <p align="justify">
+  
 The attack commands are generated using a text to speech converter on a smart phone. The audio output is given to a vector signal generator which is used to modulate the input frequency on a high frequency carrier. The signal generator can be used to sweep over a range of frquencies to find the most effective attack frequency for a given phone model and SR system. The output of the signal generator is connected to a Vifa Ultrasonic speaker which transmits the modulated commands. The attack success can be tested on different SR systems like Siri, Cortana, Google Assistant Alexa etc on different devices like laptops and mobilephones.
  
 </p>
@@ -70,7 +73,6 @@ The portable dolphin attack was chosen as the means of attack over the table top
 <p align="justify">
  
 According to the analysis in [1], the cost of implementing the attack through the portable mode was only a few dollars as opposed to the default table top which involved using the expensive Ultrasonic wideband speaker Vifa and the Vector Signal Generator.
-
 At the receiver side, the non linearity present in the device's microphone can be modeled as
 </p>
 
@@ -82,7 +84,7 @@ In order to utilize this non linearity to demodulate the the baseband signal, th
 - sin(t)=m(t)*c(t) + c(t), where c(t)= cos(2*pi*F<sub>c</sub>*t)
 
 <p align="justify">
-From the two equations, the signal at the receiver end contains the the intended carrier and it's sideband frequencies and also harmonics and cross products at f<sub>m</sub>, 2(f<sub>c</sub>−f<sub>m</sub>), 2(f<sub>c</sub>+f<sub>m</sub>), 2f<sub>c</sub> , 2f<sub>c</sub>+f<sub>m</sub>, and 2f<sub>c</sub>−f<sub>m</sub>. The microphone is followed by an amplifier and a low pass filter which removes all components above the audible range. However, the original signal,f<sub>m, remains within the audible range and can be successfully recognised by the speech recognition system to perform the attack.
+From the two equations, the signal at the receiver end contains the the intended carrier and it's sideband frequencies and also harmonics and cross products at f<sub>m</sub>, 2(f<sub>c</sub>−f<sub>m</sub>), 2(f<sub>c</sub>+f<sub>m</sub>), 2f<sub>c</sub> , 2f<sub>c</sub>+f<sub>m</sub>, and 2f<sub>c</sub>−f<sub>m</sub>. The microphone is followed by an amplifier and a low pass filter which removes all components above the audible range. However, the original signal,f<sub>m</sub>, remains within the audible range and can be successfully recognised by the speech recognition system to perform the attack.
  
 </p>
 
