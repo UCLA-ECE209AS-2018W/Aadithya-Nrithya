@@ -28,14 +28,10 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 # Approach
 <p align="justify">
 The DolphinAttack can be accomplished using two methods
-  
 -Tabletop Attack 
 -Portable Attack
-
 </p>
-
 ## Tabletop Attack
-
 <p align="justify">
 This is the original version of the attack, carried out using custom hardware. It consists of :
 - Audio signal source
@@ -45,7 +41,6 @@ The attack commands are generated using a text to speech converter on a smart ph
 </p>
 
 ## Portable Attack
-
 <p align="justify">
 This is the "on the go" version of the attack, used to test the feasibility of attacking the victim while on the move, walking past him/her, for example. It consists of a :
   
@@ -68,7 +63,7 @@ In order to utilize this non linearity to demodulate the the baseband signal, th
 From the two equations, the signal at the receiver end contains the the intended carrier and it's sideband frequencies and also harmonics and cross products at fm, 2(fc−fm), 2(fc+fm), 2fc , 2fc+fm, and 2fc−fm. The microphone is followed by an amplifier and a low pass filter which removes all components above the audible range. However, the original signal,fm, remains within the audible range and can be successfully recognised by the speech recognition system to perform the attack.
 </p>
 
-## **Method**
+# **Method**
 <p align="justify">
 The components that are required for carrying out the portable include :
 
@@ -77,6 +72,64 @@ The components that are required for carrying out the portable include :
 - Samsung S7 Edge  as Attack phone
 - Multiple Smartphones as Victim
 - Ultrasonic transducer (UTR-1440K-TT-R)
+- Battery
+
+### **Samsung S7 Edge**
+
+The attack requires (carrier frequency - baseband frequency) to be greater than 20khz. The minimum sampling rate should be twice this value. Most smart phones only support a maximum sampling rate of upto 48khz, restricting the transmitted signal to a frequency of 24khz
+This does not give us a wide range to work with. Fortunately, the samsung S7 Edge supports a sampling rate of 192khz and lends itself well to the attack
+
+### **Audio Amplifier**
+
+The TPA2005D1 is chosen as it is a variable gain audio amplifier meant specifically to drive transducers. The default gain value is 2 but can be increased upto 10, thereby extending therange of the portable attack
+
+### **Ultrasonic transducer (UTR-1440K-TT-R)**
+
+The Samsung phone provides a  sufficient sampling rate, however  it’s speaker's output frequencies are restricted to the audio range.
+Thus a narrow band transducer is utilized for transmission of the attack signal over the ultrasonic band of 40kHz. This particular carrier is chosen as it was the most widely available as opposed to other frequency ranges like 23 or 25khz.
+
+### **Victim devices** 
+
+The attack was tested on various victim phones like
+- Oneplus 5
+- Xiomi Redmi Note 4
+- Samsung S6 Edge
+- Samsung S7 Edge
+
+Tablet
+- Nexus 5
+
+Apple Watch
+
+## **Initial Attack**
+
+Input voice signals were recorded on the Samsung S7 and modulated on a 40khz carrier using MATLAB. The output wave file was given as input to the audio amplifier through a 3.5mm stereo audio jack, as the phone had a stereo speaker. However, the amplifier operates on a differential input. So the left and right channels of the audio jack are combined together before connecting to the amplifier. This is powered by a 4.7V battery. The output of the audio amplifier is given as input to the ultrasonic transducer. The attack is tested on the above mentioned victim devices at varying distances and for various input commands like "whats the temperature' , 'ok google" etc.
+
+## **Findings**
+
+We found that the original signal was not reconstructed at the receiver end as expected. Further analysis of individual components was thus required. The audio jack output was connected to an oscilloscope. On sweeping the frequencies given as input to the jack from the phone, over a range of 20-20khz, it was found that the sound was cut off at 14khz. In order to test if this filtering was done by the phone or the audio jack, the same test was repeated using different phones to find the same effect at the same frequency. Also, it was found that the phone could play 18khz and possibly belong by manual testing using commodity earphones. The stereo jack was replaced by a 3.5mm mono jack and the experiment was repeated. This jack was found to cut off frequencies below 16khz. 
+Additionally, the non linearity model for the microphone at the receiver seemed to hold for the speaker on the attack side as well. This hypothesis was tested by connecting a probe from the laptop to the oscilloscope and playing the high frequency signal. Components within the audible range were observed. This caused frequency components in the audible range that hindered the proper recognition of commands, at the receiver end
+
+## **Revised Attack**
+
+The two sources of problem(change this word) were eliminated using an STM32 Nucleo Development board with an Mbed OS as the source of the attack signal. The Nucleo is equipped with a 12 bit DAC, the output of which is connected to the audio amplifier and then to the transducer. The setup's viability is first tested using montone signals. Audacity was used as the tool to generate monotone sine waves. The audio signal, sampled at 96khz was modulated on MATLAB. The resulting wav file was converted to array of samples stored in a C file using a tool called WAVtoCode Converter. The Mbed online compiler was used for generating the binary. The generated binary was flashed in the flash memory of the Nucleo board. 
+
+## **Findings**
+
+The waveform of the signals at the transmitting and receiving end were generated and analysed using matlab and audacity respectively. In The case of the low frequency monotones, the spectrum of the modulated signals was observed at the carrier frequency and it's two sidebands at the transmitter side. However, the expected harmonic on the receiver side could not be distinguished by plotting the spectrum of the signal recorded on the victim microphone. This was because of ambient noise in the range of a few herts to almost 10khz.
+When the frequency of the baseband signal is increased beyond the audible range, definite harmonics are observed on the receiver side
+This is tested for different frequencies, receivers and at different locations and found consistent. However, the harmonics are not at the expected frequencies. Also, at 96khz, the reconstruction of the DAC output was not satisfactory, so that sampling rate was increased to 192khz
+
+
+ 
+
+
+
+
+
+
+
+
 
 </p>
 
