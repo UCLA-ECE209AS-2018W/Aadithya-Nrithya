@@ -143,8 +143,8 @@ This is tested for different frequencies, receivers and at different locations a
 </figure> 
 
 <p float="left">
-  <img src="plots/5Kaudacity_plot.JPG" width="300" />
-  <img src="plots/Voice_in_mod.JPG" width="300" />
+  <img src="plots/5Kaudacity_plot.JPG" width="420" />
+  <img src="plots/Voice_in_mod.JPG" width="420" />
 </p>
 
 
