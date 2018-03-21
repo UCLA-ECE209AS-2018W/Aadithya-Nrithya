@@ -179,9 +179,12 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 
 
 # Reference
-[1.] https://www.inc.com/kevin-j-ryan/internet-trends-7-most-accurate-word-recognition-platforms.html
-[2.]
-[3.] Carlini, Nicholas, et al. "Hidden Voice Commands." USENIX Security Symposium. 2016.
-[4.] Vaidya, Tavish, et al. "Cocaine noodles: exploiting the gap between human and machine speech recognition." WOOT 15 (2015): 10-11.
-[5.] Zhang, Guoming, et al. "Dolphin Attack: Inaudible voice commands." Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security. ACM, 2017.
-[6.]
+[1] https://www.inc.com/kevin-j-ryan/internet-trends-7-most-accurate-word-recognition-platforms.html
+
+[2]
+
+[3] Carlini, Nicholas, et al. "Hidden Voice Commands." USENIX Security Symposium. 2016.
+
+[4] Vaidya, Tavish, et al. "Cocaine noodles: exploiting the gap between human and machine speech recognition." WOOT 15 (2015): 10-11.
+[5] Zhang, Guoming, et al. "Dolphin Attack: Inaudible voice commands." Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security. ACM, 2017.
+[6]
