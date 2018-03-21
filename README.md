@@ -142,7 +142,7 @@ This is tested for different frequencies, receivers and at different locations a
         <figcaption>Matlab Transmitter Side Analysis for voice </figcaption>
 </figure> 
 
-<img src="plots/" width="425"/> <img src="plots/3k_modulate_40k_audacity.PNG" width="425"/> <img src="plots/3k received signal.PNG" width="425"/> 
+<img src="plots/5Kaudacity_plot.JPG" width="325"/> <img src="plots/3k_modulate_40k_audacity.PNG" width="325"/> <img src="plots/3k received signal.PNG" width="325"/> 
 
 
 </p>
