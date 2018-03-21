@@ -168,9 +168,12 @@ The two sources of problem(change this word) were eliminated using an STM32 Nucl
 
 ## **Findings**
 
+<p align="justify">
 The waveform of the signals at the transmitting and receiving end were generated and analysed using matlab and audacity respectively. In The case of the low frequency monotones, the spectrum of the modulated signals was observed at the carrier frequency and it's two sidebands at the transmitter side. However, the expected harmonic on the receiver side could not be distinguished by plotting the spectrum of the signal recorded on the victim microphone. This was because of ambient noise in the range of a few herts to almost 10khz.
 When the frequency of the baseband signal is increased beyond the audible range, definite harmonics are observed on the receiver side
-This is tested for different frequencies, receivers and at different locations and found consistent. However, the harmonics are not at the expected frequencies. Also, at 96khz, the reconstruction of the DAC output was not satisfactory, so that sampling rate was increased to 192khz
+This is tested for different frequencies, receivers and at different locations and found consistent. However, the harmonics are not at the expected frequencies. Also, at 96KHz, the reconstruction of the DAC output was not satisfactory, so that sampling rate was increased to 192 KHz.
+</p>
+
 <figure>
       <img src="plots/Voice.png" alt='missing' />
         <figcaption>Matlab Transmitter Side Analysis for voice </figcaption>
@@ -180,40 +183,7 @@ This is tested for different frequencies, receivers and at different locations a
   <img src="plots/5Kaudacity_plot.JPG" width="420" />
   <img src="plots/Voice_in_mod.JPG" width="420" />
 </p>
-
-
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/UCLA-ECE209AS-2018W/Aadithya-Nrithya/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+# Results
 
 
 # Reference
