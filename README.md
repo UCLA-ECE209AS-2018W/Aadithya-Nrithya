@@ -113,8 +113,8 @@ Tablet
 - Nexus 5
 - Apple Watch
 
-<img src="Figures/Dolphin_attack.jpg" width="48">
-*Initial Setup*
+<a href="url"><img src="Figures/DolphinAttack.jpg" align="left" height="150" width="150" ></a>
+
 
 
 
