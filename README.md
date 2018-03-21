@@ -139,7 +139,7 @@ When the frequency of the baseband signal is increased beyond the audible range,
 This is tested for different frequencies, receivers and at different locations and found consistent. However, the harmonics are not at the expected frequencies. Also, at 96khz, the reconstruction of the DAC output was not satisfactory, so that sampling rate was increased to 192khz
 <figure>
       <img src="plots/Voice.png" alt='missing' />
-        <figcaption>Matlab Transmitter Side Analysis< for voice/figcaption>
+        <figcaption>Matlab Transmitter Side Analysis for voice </figcaption>
 </figure>
 
 
