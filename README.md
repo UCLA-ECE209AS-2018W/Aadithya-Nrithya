@@ -117,7 +117,7 @@ Tablet
 
 Input voice signals were recorded on the Samsung S7 and modulated on a 40khz carrier using MATLAB. The output wave file was given as input to the audio amplifier through a 3.5mm stereo audio jack, as the phone had a stereo speaker. However, the amplifier operates on a differential input. So the left and right channels of the audio jack are combined together before connecting to the amplifier. This is powered by a 4.7V battery. The output of the audio amplifier is given as input to the ultrasonic transducer. The attack is tested on the above mentioned victim devices at varying distances and for various input commands like "whats the temperature' , 'ok google" etc.
 
-<img src="Figures/Dolphin_attack.jpg" width="425" height="200"/> 
+<img src="Figures/Dolphin_attack.jpg" width="400" height="300"/> 
 
 
 ## **Findings**
@@ -134,17 +134,6 @@ The two sources of problem(change this word) were eliminated using an STM32 Nucl
 The waveform of the signals at the transmitting and receiving end were generated and analysed using matlab and audacity respectively. In The case of the low frequency monotones, the spectrum of the modulated signals was observed at the carrier frequency and it's two sidebands at the transmitter side. However, the expected harmonic on the receiver side could not be distinguished by plotting the spectrum of the signal recorded on the victim microphone. This was because of ambient noise in the range of a few herts to almost 10khz.
 When the frequency of the baseband signal is increased beyond the audible range, definite harmonics are observed on the receiver side
 This is tested for different frequencies, receivers and at different locations and found consistent. However, the harmonics are not at the expected frequencies. Also, at 96khz, the reconstruction of the DAC output was not satisfactory, so that sampling rate was increased to 192khz
-
-
- 
-
-
-
-
-
-
-
-
 
 </p>
 
