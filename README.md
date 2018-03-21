@@ -79,7 +79,7 @@ At the receiver side, the non linearity present in the device's microphone can b
 <p align="justify">
 In order to utilize this non linearity to demodulate the the baseband signal, the original voice signal is amplitude modulated using the following function
 </p>
-- sin(t)=m(t)*c(t) + c(t), where c(t)= cos(2*pi*F<sub>c<sub>*t)
+- sin(t)=m(t)*c(t) + c(t), where c(t)= cos(2*pi*F<sub>c</sub>*t)
 
 <p align="justify">
 From the two equations, the signal at the receiver end contains the the intended carrier and it's sideband frequencies and also harmonics and cross products at f<sub>m</sub>, 2(f<sub>c</sub>−f<sub>m</sub>), 2(f<sub>c</sub>+f<sub>m</sub>), 2f<sub>c</sub> , 2f<sub>c</sub>+f<sub>m</sub>, and 2f<sub>c</sub>−f<sub>m</sub>. The microphone is followed by an amplifier and a low pass filter which removes all components above the audible range. However, the original signal,fm, remains within the audible range and can be successfully recognised by the speech recognition system to perform the attack.
