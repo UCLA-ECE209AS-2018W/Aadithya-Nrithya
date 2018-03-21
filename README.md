@@ -140,7 +140,9 @@ This is tested for different frequencies, receivers and at different locations a
 <figure>
       <img src="plots/Voice.png" alt='missing' />
         <figcaption>Matlab Transmitter Side Analysis for voice </figcaption>
-</figure>
+</figure> 
+
+<img src="plots/" width="425"/> <img src="plots/3k_modulate_40k_audacity.PNG" width="425"/> <img src="plots/3k received signal.PNG" width="425"/> 
 
 
 </p>
@@ -186,5 +188,7 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 [3] Carlini, Nicholas, et al. "Hidden Voice Commands." USENIX Security Symposium. 2016.
 
 [4] Vaidya, Tavish, et al. "Cocaine noodles: exploiting the gap between human and machine speech recognition." WOOT 15 (2015): 10-11.
+
 [5] Zhang, Guoming, et al. "Dolphin Attack: Inaudible voice commands." Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security. ACM, 2017.
-[6]
+
+[6] 
