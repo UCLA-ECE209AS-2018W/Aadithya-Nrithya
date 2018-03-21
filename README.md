@@ -144,7 +144,7 @@ This is tested for different frequencies, receivers and at different locations a
 
 <figure>
     <img src="plots/5Kaudacity_plot.JPG" width="425"/> <img src="plots/3k received signal.PNG" width="425"/> 
-    <figcaption>Matlab Transmitter Side Analysis/figcaption><figcaption>Matlab Transmitter Side Analysis/figcaption>
+    <figcaption>Matlab Transmitter Side Analysis/><figcaption>Matlab Transmitter Side Analysis/>
 </figure>
 <img src="plots/5Kaudacity_plot.JPG" width="425"/> <img src="plots/3k received signal.PNG" width="425"/> 
 
