@@ -47,7 +47,7 @@ The attack commands are generated using a text to speech converter on a smart ph
 ## Portable Attack
 
 <p align="justify">
-This is the "on the go" version of the attack, used to test the feasibility of attacking the victim while on the move, walking past him/her, for example. It consists of a :
+This is the "on the go" version of the attack, used to test the feasibility of attacking the victim while on the move, walking past him/her, for example. It consists of :
   
 - Audio signal source
 - Audio Amplifier
@@ -63,10 +63,12 @@ The portable dolphin attack was chosen as the means of attack over the table top
 According to the analysis in [1], the cost of implementing the attack through the portable mode was only a few dollars as opposed to the default table top which involved using the expensive Ultrasonic wideband speaker Vifa and the Vector Signal Generator.
 
 At the receiver side, the non linearity present in the device's microphone can be modeled as
-(add eqn)
+
+   out(t ) = A*sin(t) + B*(sin<sup>2</sup>(t))
+   
 In order to utilize this non linearity to demodulate the the baseband signal, the original voice signal is amplitude modulated using the following function
 (add equation)
-From the two equations, the signal at the receiver end contains the the intended carrier and it's sideband frequencies and also harmonics and cross products at fm, 2(fc−fm), 2(fc+fm), 2fc , 2fc+fm, and 2fc−fm. The microphone is followed by an amplifier and a low pass filter which removes all components above the audible range. However, the original signal,fm, remains within the audible range and can be successfully recognised by the speech recognition system to perform the attack.
+From the two equations, the signal at the receiver end contains the the intended carrier and it's sideband frequencies and also harmonics and cross products at f<sub>m</sub>, 2(fc−fm), 2(fc+fm), 2fc , 2fc+fm, and 2fc−fm. The microphone is followed by an amplifier and a low pass filter which removes all components above the audible range. However, the original signal,fm, remains within the audible range and can be successfully recognised by the speech recognition system to perform the attack.
 </p>
 
 # **Method**
