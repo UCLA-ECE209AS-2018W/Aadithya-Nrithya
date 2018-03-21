@@ -136,7 +136,7 @@ The waveform of the signals at the transmitting and receiving end were generated
 When the frequency of the baseband signal is increased beyond the audible range, definite harmonics are observed on the receiver side
 This is tested for different frequencies, receivers and at different locations and found consistent. However, the harmonics are not at the expected frequencies. Also, at 96khz, the reconstruction of the DAC output was not satisfactory, so that sampling rate was increased to 192khz
 
-<img src="plots/voice.png"/> 
+<img src="plots/Voice.png"/> 
 
 
 </p>
