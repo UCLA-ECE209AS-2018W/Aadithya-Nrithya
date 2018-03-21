@@ -144,7 +144,6 @@ This is tested for different frequencies, receivers and at different locations a
 
 <p float="left">
   <img src="plots/5Kaudacity_plot.JPG" width="300" />
-  <img src="plots/3k received signal.PNG" width="300" /> 
   <img src="plots/3k received signal.PNG" width="300" />
 </p>
 
