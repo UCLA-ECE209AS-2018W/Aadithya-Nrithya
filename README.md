@@ -23,12 +23,14 @@ Traditionally, several techniques have been used to attack Speech Recognition an
 You can use the [editor on GitHub](https://github.com/UCLA-ECE209AS-2018W/Aadithya-Nrithya/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+</p>
 
 ## Approach
 <p align="justify">
 The DolphinAttack can be accomplished using two methods
--Tabletop Attack
+-Tabletop Attack 
 -Portable Attack
+</p>
 # Tabletop Attack
 <p align="justify">
 This is the original version of the attack, carried out using custom hardware. It consists of :
@@ -36,6 +38,7 @@ This is the original version of the attack, carried out using custom hardware. I
 - Vector signal generator
 - Vifa ultrasonic speaker
 The attack commands are generated using a text to speech converter on a smart phone. The audio output is given to a vector signal generator which is used to modulate the input frequency on a high frequency carrier. The signal generator can be used to sweep over a range of frquencies to find the most effective attack frequency for a given phone model and SR system. The output of the signal generator is connected to a Vifa Ultrasonic speaker which transmits the modulated commands. The attack success can be tested on different SR systems like Siri, Cortana, Google Assistant Alexa etc on different devices like laptops and mobilephones.
+</p>
 
 # Portable Attack
 <p align="justify">
@@ -56,6 +59,7 @@ At the receiver side, the non linearity present in the device's microphone can b
 In order to utilize this non linearity to demodulate the the baseband signal, the original voice signal is amplitude modulated using the following function
 (add equation)
 From the two equations, the signal at the receiver end contains the the intended carrier and it's sideband frequencies and also harmonics and cross products at fm, 2(fc−fm), 2(fc+fm), 2fc , 2fc+fm, and 2fc−fm. The microphone is followed by an amplifier and a low pass filter which removes all components above the audible range. However, the original signal,fm, remains within the audible range and can be successfully recognised by the speech recognition system to perform the attack.
+</p>
 
 ##**Method**
 
