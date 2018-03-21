@@ -28,10 +28,14 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 # Approach
 <p align="justify">
 The DolphinAttack can be accomplished using two methods
+  
 -Tabletop Attack 
 -Portable Attack
+
 </p>
+
 ## Tabletop Attack
+
 <p align="justify">
 This is the original version of the attack, carried out using custom hardware. It consists of :
 - Audio signal source
@@ -41,6 +45,7 @@ The attack commands are generated using a text to speech converter on a smart ph
 </p>
 
 ## Portable Attack
+
 <p align="justify">
 This is the "on the go" version of the attack, used to test the feasibility of attacking the victim while on the move, walking past him/her, for example. It consists of a :
   
