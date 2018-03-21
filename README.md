@@ -71,7 +71,7 @@ In order to utilize this non linearity to demodulate the the baseband signal, th
 From the two equations, the signal at the receiver end contains the the intended carrier and it's sideband frequencies and also harmonics and cross products at f<sub>m</sub>, 2(f<sub>c</sub>−f<sub>m</sub>), 2(f<sub>c</sub>+f<sub>m</sub>), 2f<sub>c</sub> , 2f<sub>c</sub>+f<sub>m</sub>, and 2f<sub>c</sub>−f<sub>m</sub>. The microphone is followed by an amplifier and a low pass filter which removes all components above the audible range. However, the original signal,fm, remains within the audible range and can be successfully recognised by the speech recognition system to perform the attack.
 </p>
 
-# **Method**
+# Method
 <p align="justify">
 The components that are required for carrying out the portable attack include :
 
@@ -89,21 +89,21 @@ The Software includes
 - Mbed Online Compiler
 
 
-### **Samsung S7 Edge**
+### Samsung S7 Edge
 
 The attack requires carrier frequency - baseband frequency to be greater than 20khz. The minimum sampling rate should be twice this value. Most smart phones only support a maximum sampling rate of upto 48khz, restricting the transmitted signal to a frequency of 24khz
 This does not give us a wide range of frequencies to work with. Fortunately, the Samsung Galaxy S7 Edge supports a sampling rate of 192khz and lends itself well to construct the attack.
 
-### **Audio Amplifier**
+### Audio Amplifier
 
 The TPA2005D1 is chosen as it is a variable gain audio amplifier meant specifically to drive transducers. The default gain value is 2 but can be increased upto 10, thereby extending therange of the portable attack
 
-### **Ultrasonic transducer (UTR-1440K-TT-R)**
+### Ultrasonic transducer (UTR-1440K-TT-R)
 
 The Samsung phone provides a sufficient sampling rate, however it’s speaker's output frequencies are restricted to the audio range.
 Thus a narrow band transducer is utilized for transmission of the attack signal over the ultrasonic band of 40kHz. This particular carrier is chosen as it was the most widely available as opposed to other frequency ranges like 23 or 25khz.
 
-### **Victim devices** 
+### Victim devices
 
 The attack was tested on various victim phones like
 - Oneplus 5
@@ -115,7 +115,7 @@ Tablet
 - Nexus 5
 - Apple Watch
 
-## **Initial Attack**
+## Initial Attack
 
 Input voice signals were recorded on the Samsung S7 and modulated on a 40khz carrier using MATLAB. The output wave file was given as input to the audio amplifier through a 3.5mm stereo audio jack, as the phone had a stereo speaker. However, the amplifier operates on a differential input. So the left and right channels of the audio jack are combined together before connecting to the amplifier. This is powered by a 4.7V battery. The output of the audio amplifier is given as input to the ultrasonic transducer. The attack is tested on the above mentioned victim devices at varying distances and for various input commands like "whats the temperature' , 'ok google" etc.
 
@@ -125,7 +125,7 @@ Input voice signals were recorded on the Samsung S7 and modulated on a 40khz car
         <figcaption>Matlab Transmitter Side Analysis</figcaption>
 </figure>
 
-## **Findings**
+## Findings
 
 We found that the original signal was not reconstructed at the receiver end as expected. Further analysis of individual components was thus required. The audio jack output was connected to an oscilloscope. On sweeping the frequencies given as input to the jack from the phone, over a range of 20-20khz, it was found that the sound was cut off at 14khz. In order to test if this filtering was done by the phone or the audio jack, the same test was repeated using different phones to find the same effect at the same frequency. Also, it was found that the phone could play 18khz and possibly belong by manual testing using commodity earphones. The stereo jack was replaced by a 3.5mm mono jack and the experiment was repeated. This jack was found to cut off frequencies below 16khz. 
 Additionally, the non linearity model for the microphone at the receiver seemed to hold for the speaker on the attack side as well. This hypothesis was tested by connecting a probe from the laptop to the oscilloscope and playing the high frequency signal. Components within the audible range were observed. This caused frequency components in the audible range that hindered the proper recognition of commands, at the receiver end.
