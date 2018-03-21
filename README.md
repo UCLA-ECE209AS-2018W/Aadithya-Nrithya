@@ -71,7 +71,7 @@ From the two equations, the signal at the receiver end contains the the intended
 
 # **Method**
 <p align="justify">
-The components that are required for carrying out the portable include :
+The components that are required for carrying out the portable attack include :
 
 - 3.5 mm Audio Jack pigtail-mono and stereo
 - SparkFun Class-D audio amplifier TPA2005D1
