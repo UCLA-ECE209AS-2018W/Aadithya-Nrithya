@@ -113,7 +113,7 @@ Tablet
 - Nexus 5
 - Apple Watch
 
-<a href="url"><img src="Figures/DolphinAttack.jpg" align="left" height="150" width="150" ></a>
+<a href="url"><img src="https://github.com/UCLA-ECE209AS-2018W/Aadithya-Nrithya/blob/master/Figures/Dolphin_attack.jpg" align="left" height="150" width="150" ></a>
 
 
 ## **Initial Attack**
