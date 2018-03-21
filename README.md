@@ -18,12 +18,7 @@ There is an increasing usage of Speech Recognition systems developed by Google, 
 # Related Work
 
 <p align="justify">
-Traditionally, several techniques have been used to attack Speech Recognition and Voice Control Systems. An interesting attack on the early generation Alexa in Amazon Echo was entirely unintentional [2] NPR's weekend edition broadcast a listen up section about Alexa which prompted a number of these devices to respond to the story by turning up the thermostat and shopping online. Carlini et al chose to attack the speech recognition system by hiding the attack commands such that they can be sdeciphered by the system but remain incomprehensible to the user. This attack is accomplished in both scenarios, when the attackers have knowledge of the SR system's internal structure and when they do not. This work is based on the work of Vaidya et al in mangling nromal input commands using an audio mangler which converts them into morphed sounds which retain the acoustic features of the key words. In CommaderSong, attack commands are embedded in songs which are then used to attack the voice control systems The wireless cahnnel may also be utilized for command injection.Chaouki et al show that specific electromagnetic commands can be coupled with the headphones used with smartphones in order to inject voice commands to the speech recognition systems. The attack closest to the Dolphin attack is the Backdoor Attack. Here, two ultrasonic signals, one carrying the attack command and another pilot tone used for original signal reconstruction are transmitted to the receiver. The microphone non linearities are ultilized to recover the original attack command and activate the speech recognition system. The Dolphin command is superior to the above approaches in that it can be accomplished without being noticed by the user, without any commodity hardware and is relatively inexpensive.
-  
-
-You can use the [editor on GitHub](https://github.com/UCLA-ECE209AS-2018W/Aadithya-Nrithya/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Traditionally, several techniques have been used to attack Speech Recognition and Voice Control Systems. An interesting attack on the early generation Alexa in Amazon Echo was entirely unintentional [2] NPR's weekend edition broadcast a listen up section about Alexa which prompted a number of these devices to respond to the story by turning up the thermostat and shopping online. Carlini et al., chose to attack the speech recognition system by hiding the attack commands such that they can be sdeciphered by the system but remain incomprehensible to the user. This attack is accomplished in both scenarios, when the attackers have knowledge of the SR system's internal structure and when they do not. This work is based on the work of Vaidya et al in mangling nromal input commands using an audio mangler which converts them into morphed sounds which retain the acoustic features of the key words. In CommaderSong, attack commands are embedded in songs which are then used to attack the voice control systems The wireless cahnnel may also be utilized for command injection.Chaouki et al show that specific electromagnetic commands can be coupled with the headphones used with smartphones in order to inject voice commands to the speech recognition systems. The attack closest to the Dolphin attack is the Backdoor Attack. Here, two ultrasonic signals, one carrying the attack command and another pilot tone used for original signal reconstruction are transmitted to the receiver. The microphone non linearities are ultilized to recover the original attack command and activate the speech recognition system. The Dolphin attack is superior to the above approaches in that it can be accomplished without being noticed by the user, without any commodity hardware and is relatively inexpensive.
 </p>
 
 # Approach
@@ -47,6 +42,8 @@ This is the original version of the attack, carried out using custom hardware. I
 The attack commands are generated using a text to speech converter on a smart phone. The audio output is given to a vector signal generator which is used to modulate the input frequency on a high frequency carrier. The signal generator can be used to sweep over a range of frquencies to find the most effective attack frequency for a given phone model and SR system. The output of the signal generator is connected to a Vifa Ultrasonic speaker which transmits the modulated commands. The attack success can be tested on different SR systems like Siri, Cortana, Google Assistant Alexa etc on different devices like laptops and mobilephones.
 </p>
 
+![stack Overflow](http://lmsotfy.com/so.png)
+
 ## Portable Attack
 
 <p align="justify">
@@ -63,7 +60,7 @@ The portable dolphin attack was chosen as the means of attack over the table top
 - Low Cost of Implementation
 - Reduced physical Intervention
 
-According to the analysis in [ ], the cost of implementing the attack through the portable mode was only a few dollars as opposed to the default table top which involved using the expensive Ultrasonic wideband speaker Vifa [ ] and the Vector Signal Generator.
+According to the analysis in [1], the cost of implementing the attack through the portable mode was only a few dollars as opposed to the default table top which involved using the expensive Ultrasonic wideband speaker Vifa and the Vector Signal Generator.
 
 At the receiver side, the non linearity present in the device's microphone can be modeled as
 (add eqn)
@@ -177,6 +174,6 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 
 # Reference
 [1] https://www.inc.com/kevin-j-ryan/internet-trends-7-most-accurate-word-recognition-platforms.html
-[]
-[] Zhang, Guoming, et al. "Dolphin Attack: Inaudible voice commands." Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security. ACM, 2017.
-[]
+[2] 
+[3] Zhang, Guoming, et al. "Dolphin Attack: Inaudible voice commands." Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security. ACM, 2017.
+[4]
