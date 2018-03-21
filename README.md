@@ -80,6 +80,13 @@ The components that are required for carrying out the portable include :
 - Ultrasonic transducer (UTR-1440K-TT-R)
 - Battery
 
+The Software includes 
+
+- Matlab
+- Audacity
+- Mbed Online Compiler
+
+
 ### **Samsung S7 Edge**
 
 The attack requires (carrier frequency - baseband frequency) to be greater than 20khz. The minimum sampling rate should be twice this value. Most smart phones only support a maximum sampling rate of upto 48khz, restricting the transmitted signal to a frequency of 24khz
