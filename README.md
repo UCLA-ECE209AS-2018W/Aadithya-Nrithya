@@ -89,8 +89,8 @@ The Software includes
 
 ### **Samsung S7 Edge**
 
-The attack requires (carrier frequency - baseband frequency) to be greater than 20khz. The minimum sampling rate should be twice this value. Most smart phones only support a maximum sampling rate of upto 48khz, restricting the transmitted signal to a frequency of 24khz
-This does not give us a wide range to work with. Fortunately, the samsung S7 Edge supports a sampling rate of 192khz and lends itself well to the attack
+The attack requires carrier frequency - baseband frequency to be greater than 20khz. The minimum sampling rate should be twice this value. Most smart phones only support a maximum sampling rate of upto 48khz, restricting the transmitted signal to a frequency of 24khz
+This does not give us a wide range of frequencies to work with. Fortunately, the Samsung Galaxy S7 Edge supports a sampling rate of 192khz and lends itself well to construct the attack.
 
 ### **Audio Amplifier**
 
@@ -113,7 +113,9 @@ Tablet
 - Nexus 5
 - Apple Watch
 
-<a href="url"><img src="Figures/Dolphin_attack.jpg" align="center" height="250" width="250" ></a>
+![Test]("Figures/Dolphin_attack.jpg")
+*Initial Setup*
+
 
 
 ## **Initial Attack**
