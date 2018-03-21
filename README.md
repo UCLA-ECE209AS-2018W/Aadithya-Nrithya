@@ -137,8 +137,10 @@ The two sources of problem(change this word) were eliminated using an STM32 Nucl
 The waveform of the signals at the transmitting and receiving end were generated and analysed using matlab and audacity respectively. In The case of the low frequency monotones, the spectrum of the modulated signals was observed at the carrier frequency and it's two sidebands at the transmitter side. However, the expected harmonic on the receiver side could not be distinguished by plotting the spectrum of the signal recorded on the victim microphone. This was because of ambient noise in the range of a few herts to almost 10khz.
 When the frequency of the baseband signal is increased beyond the audible range, definite harmonics are observed on the receiver side
 This is tested for different frequencies, receivers and at different locations and found consistent. However, the harmonics are not at the expected frequencies. Also, at 96khz, the reconstruction of the DAC output was not satisfactory, so that sampling rate was increased to 192khz
-
-<img src="plots/Voice.png"/> 
+<figure>
+      <img src="plots/Voice.png" alt='missing' />
+        <figcaption>Matlab Transmitter Side Analysis< for voice/figcaption>
+</figure>
 
 
 </p>
