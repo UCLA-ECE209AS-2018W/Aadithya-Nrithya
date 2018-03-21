@@ -114,6 +114,7 @@ Tablet
 - Apple Watch
 
 ![Test](Figures/Dolphin_attack.jpg){:height="36px" width="36px"}.
+<img src="Figures/Dolphin_attack.jpg" width="48">
 *Initial Setup*
 
 
