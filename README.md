@@ -113,8 +113,7 @@ Tablet
 - Nexus 5
 - Apple Watch
 
-![](Figures/Dolphin_attack.jpg)
-<img src="Figures/Dolphin_attack.jpg"  width="120" height="120">
+<img src="Figures/Dolphin_attack.jpg"  width="250" height="250">
 
 ## **Initial Attack**
 
