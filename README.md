@@ -42,6 +42,7 @@ This is the original version of the attack, carried out using custom hardware. I
 - Audio signal source
 - Vector signal generator
 - Vifa ultrasonic speaker
+
 The attack commands are generated using a text to speech converter on a smart phone. The audio output is given to a vector signal generator which is used to modulate the input frequency on a high frequency carrier. The signal generator can be used to sweep over a range of frquencies to find the most effective attack frequency for a given phone model and SR system. The output of the signal generator is connected to a Vifa Ultrasonic speaker which transmits the modulated commands. The attack success can be tested on different SR systems like Siri, Cortana, Google Assistant Alexa etc on different devices like laptops and mobilephones.
 </p>
 
