@@ -115,8 +115,7 @@ Tablet
 
 
 
-| <img src="Figures/Dolphin_attack.jpg" style="width: 400px;"/> |
-| My Caption |
+<img src="Figures/DolphinAttack.jpg" width="425"/> 
 
 
 ## **Initial Attack**
