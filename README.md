@@ -142,23 +142,15 @@ This is tested for different frequencies, receivers and at different locations a
         <figcaption>Matlab Transmitter Side Analysis for voice </figcaption>
 </figure> 
 
-
 <figure>
-    <img src='plots/5Kaudacity_plot.JPG' alt='missing' width="425"/>
-    <figcaption>Caption goes here</figcaption>
-</figure>
-<figure>
-    <img src='plots/5Kaudacity_plot.JPG' alt='missing' />
-    <figcaption>Caption goes here</figcaption>
-</figure>
-
-<figure>
-    <img src="plots/5Kaudacity_plot.JPG" width="425"/> <img src="plots/3k received signal.PNG" width="425"/> 
+    <img src="plots/5Kaudacity_plot.JPG" width="325"/> <img src="plots/3k received signal.PNG" width="425"/> 
     <figcaption>Matlab Transmitter Side Analysis/><figcaption>Matlab Transmitter Side Analysis/>
 </figure>
 <img src="plots/5Kaudacity_plot.JPG" width="425"/> <img src="plots/3k received signal.PNG" width="425"/> 
 
-
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![](plots/5Kaudacity_plot.JPG)  |  ![](plots/3k received signal.PNG)
 </p>
 
 ### Markdown
