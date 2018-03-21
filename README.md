@@ -16,6 +16,7 @@ There is an increasing usage of Speech Recognition systems developed by Google, 
 </p>
 
 # Related Work
+
 <p align="justify">
 Traditionally, several techniques have been used to attack Speech Recognition and Voice Control Systems. An interesting attack on the early generation Alexa in Amazon Echo was entirely unintentional [] NPR's weekend edition broadcast a listen up section about Alexa which prompted a number of these devices to respond to the story by turning up the thermostat and shopping online. Carlini et al chose to attack the speech recognition system by hiding the attack commands such that they can be sdeciphered by the system but remain incomprehensible to the user. This attack is accomplished in both scenarios, when the attackers have knowledge of the SR system's internal structure and when they do not. This work is based on the work of Vaidya et al in mangling nromal input commands using an audio mangler which converts them into morphed sounds which retain the acoustic features of the key words. In CommaderSong, attack commands are embedded in songs which are then used to attack the voice control systems The wireless cahnnel may also be utilized for command injection.Chaouki et al show that specific electromagnetic commands can be coupled with the headphones used with smartphones in order to inject voice commands to the speech recognition systems. The attack closest to the Dolphin attack is the Backdoor Attack. Here, two ultrasonic signals, one carrying the attack command and another pilot tone used for original signal reconstruction are transmitted to the receiver. The microphone non linearities are ultilized to recover the original attack command and activate the speech recognition system. The Dolphin command is superior to the above approaches in that it can be accomplished without being noticed by the user, without any commodity hardware and is relatively inexpensive.
   
@@ -93,7 +94,7 @@ The TPA2005D1 is chosen as it is a variable gain audio amplifier meant specifica
 
 ### **Ultrasonic transducer (UTR-1440K-TT-R)**
 
-The Samsung phone provides a  sufficient sampling rate, however  it’s speaker's output frequencies are restricted to the audio range.
+The Samsung phone provides a sufficient sampling rate, however it’s speaker's output frequencies are restricted to the audio range.
 Thus a narrow band transducer is utilized for transmission of the attack signal over the ultrasonic band of 40kHz. This particular carrier is chosen as it was the most widely available as opposed to other frequency ranges like 23 or 25khz.
 
 ### **Victim devices** 
@@ -116,7 +117,7 @@ Input voice signals were recorded on the Samsung S7 and modulated on a 40khz car
 ## **Findings**
 
 We found that the original signal was not reconstructed at the receiver end as expected. Further analysis of individual components was thus required. The audio jack output was connected to an oscilloscope. On sweeping the frequencies given as input to the jack from the phone, over a range of 20-20khz, it was found that the sound was cut off at 14khz. In order to test if this filtering was done by the phone or the audio jack, the same test was repeated using different phones to find the same effect at the same frequency. Also, it was found that the phone could play 18khz and possibly belong by manual testing using commodity earphones. The stereo jack was replaced by a 3.5mm mono jack and the experiment was repeated. This jack was found to cut off frequencies below 16khz. 
-Additionally, the non linearity model for the microphone at the receiver seemed to hold for the speaker on the attack side as well. This hypothesis was tested by connecting a probe from the laptop to the oscilloscope and playing the high frequency signal. Components within the audible range were observed. This caused frequency components in the audible range that hindered the proper recognition of commands, at the receiver end
+Additionally, the non linearity model for the microphone at the receiver seemed to hold for the speaker on the attack side as well. This hypothesis was tested by connecting a probe from the laptop to the oscilloscope and playing the high frequency signal. Components within the audible range were observed. This caused frequency components in the audible range that hindered the proper recognition of commands, at the receiver end.
 
 ## **Revised Attack**
 
