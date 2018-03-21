@@ -29,8 +29,9 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 <p align="justify">
 The DolphinAttack can be accomplished using two methods
--Tabletop Attack 
--Portable Attack
+  
+- Tabletop Attack 
+- Portable Attack
 </p>
 
 ## Tabletop Attack
