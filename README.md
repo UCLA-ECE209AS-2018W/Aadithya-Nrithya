@@ -23,12 +23,11 @@ Traditionally, several techniques have been used to attack Speech Recognition an
 
 # Approach
 
-<p align="justify">
 The DolphinAttack can be accomplished using two methods
   
 - Tabletop Attack 
 - Portable Attack
-</p>
+
 
 ## Tabletop Attack
 
