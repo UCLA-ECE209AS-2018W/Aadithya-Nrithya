@@ -10,7 +10,7 @@ This is the project website for the course ECE 209 AS. This website contains the
 - Analysis
 - Discussion
 
-##Problem Statement
+## Problem Statement
 <p align="justify">
 There is an increasing usage of Speech Recognition systems developed by Google, Amazon, Apple and Microsoft in Mobile Phones, Laptops and more recently smart home speaker systems. With fast advances in Machine Learning, Artificial Intelligence and Embedded Systems, these speech recognition systems are making their way into the common man's home, performing everyday tasks. However there always vulnerabilities in any technology. One such vulnerability that can be exploited to a attacker's advantage is the non-linearity of the microphones present in the COTS devices. Inaudible sounds (Ultrasonic frequency) can used to attack these devices by exploiting the above vulnerability. Ultrasonic sounds which are above 20 KHz and completely inaudible, can still be picked up the speech recognition systems in these devices through the non-linearity of the audio circuits. The original low frequency components used to modulate the ultrasound carrier are demodulated and interpreted by the SR systems due to this effect. The attack we choose to implement is the portable Dolphin Attack which involves attacking mobile phones and laptops by transmitting attack commands from a smart phone over a ultrasonic transducer. This attack is relatively inexpensive and can be launched on the fly. The amount of damage that can be caused to the user can be both mental and monetary. Dolphin commands can be used to accomplish benign tasks like prank calls,order takeouts, schedule Uber and range upto malicious monetary transcations. We analyse the feasibility of carrying out the portable Dolphin attack and evaluate the results. 
 </p>
@@ -29,17 +29,17 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 The DolphinAttack can be accomplished using two methods
 -Tabletop Attack
 -Portable Attack
-#Tabletop Attack
+# Tabletop Attack
 <p align="justify">
-This is the original version of the attack, carried out using custom hardware. It consists of a 
+This is the original version of the attack, carried out using custom hardware. It consists of :
 - Audio signal source
 - Vector signal generator
 - Vifa ultrasonic speaker
 The attack commands are generated using a text to speech converter on a smart phone. The audio output is given to a vector signal generator which is used to modulate the input frequency on a high frequency carrier. The signal generator can be used to sweep over a range of frquencies to find the most effective attack frequency for a given phone model and SR system. The output of the signal generator is connected to a Vifa Ultrasonic speaker which transmits the modulated commands. The attack success can be tested on different SR systems like Siri, Cortana, Google Assistant Alexa etc on different devices like laptops and mobilephones.
 
-#Portable Attack
+# Portable Attack
 <p align="justify">
-This is the "on the go" version of the attack, used to test the feasibility of attacking the victim while on the move, walking past him/her, for example. It consists of a 
+This is the "on the go" version of the attack, used to test the feasibility of attacking the victim while on the move, walking past him/her, for example. It consists of a :
 - Audio signal source
 - Audio Amplifier
 - Ultrasonic transducer
