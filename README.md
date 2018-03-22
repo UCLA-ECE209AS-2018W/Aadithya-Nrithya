@@ -172,6 +172,9 @@ Additionally, the non linearity model for the microphone at the receiver seemed 
   
 </p>
 
+<img src="Figures/Testing.jpg" width="400" height="400"/> 
+
+
 ## Revised Attack 
 
 <p align="justify">
