@@ -224,7 +224,7 @@ Moving forward, the attack can be tested using a number of transducers over a ra
 
 <p align="justify">
   
-We would like to thank professor Mani Srivastava, Mr, Moustafa and all others at NESL for their guidance and unwavering support during our time in this project.
+We would like to thank Professor Mani Srivastava, Mr. Moustafa and all others at NESL for their guidance and unwavering support during our time in this project.
 
 </p> 
 
