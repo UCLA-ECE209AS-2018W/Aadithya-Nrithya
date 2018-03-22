@@ -8,7 +8,7 @@ This is the [project website](https://ucla-ece209as-2018w.github.io/Aadithya-Nri
 - Method
 - Findings
 - Analysis
-- Discussion
+- Future Work
 
 # Problem Statement
 <p align="justify">
@@ -76,8 +76,9 @@ The portable dolphin attack was chosen as the means of attack over the table top
 <p align="justify">
  
 According to the analysis in [1], the cost of implementing the attack through the portable mode was only a few dollars as opposed to the default table top attack which involved using the expensive ultrasonic wideband speaker Vifa and the vector signal generator.
-At the receiver side, the non linearity present in the device's microphone can be modeled as
 </p>
+
+At the receiver side, the non linearity present in the device's microphone can be modeled as
 
 - out(t ) = A*sin(t) + B*(sin<sup>2</sup>(t))
  
@@ -147,6 +148,8 @@ The attack was tested on various victim phones like
 
 Tablet
 - Nexus 7
+
+Wearable
 - Apple Watch
 
 ## Initial Attack
@@ -200,11 +203,12 @@ This was tested for different frequencies, receivers and at different locations 
   <img src="plots/3k received signal.PNG" width="380" />
   <img src="plots/signal_at_receiver.PNG" width="380" />
 </p>
+
 # Analysis
 
 <p align="justify">
 
-The audible sounds in the speaker end while playing ultrasonic modulated signals is proof of the success of the non linearity model. The reason for the failure of the attack could be attributed to the lack of availability of the wide range of  ultrasonic transducers necessary for testing the attack on different victim devices, to find the ideal attack frequency. We were limited to using a very narrow band 40kHz transducer and later a 25kHz transducer. Thus modulation could not be done over a range of frequencies to test the one most ideal for the attack. While the DolphinAttack paper mentions the frequency bands at which the attack was successful for different devices, there is no mention of the success rate or attack effectiveness. So a device on which the attack worked for a frequency range of 23-40kHz could have actually been 100% successful at one of these frequencies and the other cases could have been due to the influence of external factors.
+The audible sounds in the speaker end while playing ultrasonic modulated signals is proof of the success of the non linearity model. The reason for the failure of the attack could be attributed to the lack of availability of the wide range of  ultrasonic transducers necessary for testing the attack on different victim devices, to find the ideal attack frequency. We were limited to using a very narrow band 40kHz transducer and later a 25 kHz transducer. Thus modulation could not be done over a range of frequencies to test the one most ideal for the attack. While the DolphinAttack paper mentions the frequency bands at which the attack was successful for different devices, there is no mention of the success rate or attack effectiveness. So a device on which the attack worked for a frequency range of 23-40 kHz could have been 100% successful at one of these frequencies and the other cases could have been due to the influence of external factors.
 
 </p>
 
@@ -212,9 +216,17 @@ The audible sounds in the speaker end while playing ultrasonic modulated signals
 
 <p align="justify">
 
-Moving forward, the attack can be tested using a number of transducers over a range of ultrasonic frequencies. 
+Moving forward, the attack can be tested using a number of transducers over a range of ultrasonic frequencies and verify if it is getting picked up by the phones or the smart home devices.
 
 </p>
+
+# Acknowledgements
+
+<p align="justify">
+  
+We would like to thank professor Mani Srivastava, Mr, Moustafa and all others at NESL for their guidance and unwavering support during our time in this project.
+
+</p> 
 
 
 # Reference
