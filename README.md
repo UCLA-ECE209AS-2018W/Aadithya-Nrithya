@@ -13,7 +13,7 @@ This is the [project website](https://ucla-ece209as-2018w.github.io/Aadithya-Nri
 # Problem Statement
 <p align="justify">
   
-There is an increase in the use of Speech Recognition systems developed by Google, Amazon, Apple and Microsoft in mobile Phones, laptops and more recently smart home devices. With fast advances in Machine Learning, Artificial Intelligence and Embedded Systems, these speech recognition systems are making their way into the common man's home, performing everyday tasks [1]. However, there are always vulnerabilities in any technology. One such vulnerability that can be exploited to a attacker's advantage is the non-linearity of the microphones present in the COTS devices. Inaudible sounds (Ultrasonic frequency) can used to attack these devices by exploiting the above vulnerability. The original low frequency components used to modulate the ultrasound carrier are demodulated and interpreted by the SR systems due to this effect. The attack we choose to implement is the portable Dolphin Attack which involves attacking mobile phones and laptops by transmitting attack commands from a smart phone over a ultrasonic transducer. This attack is relatively inexpensive and can be launched on the go. The damage that can be caused to the user can be both mental and monetary. Dolphin commands can be used to accomplish benign tasks like prank calls,order takeouts, schedule Uber and range upto malicious monetary transcations. We analyse different implementations of the portable Dolphin attack and evaluate the results. 
+There is an increase in the use of Speech Recognition systems developed by Google, Amazon, Apple and Microsoft in mobile Phones, laptops and more recently smart home devices. With fast advances in Machine Learning, Artificial Intelligence and Embedded Systems, these speech recognition systems are making their way into the common man's home, performing everyday tasks [1]. However, there are always vulnerabilities in any technology. One such vulnerability that can be exploited to a attacker's advantage is the non-linearity of the microphones present in the COTS devices. Inaudible sounds (Ultrasonic frequency) can used to attack these devices by exploiting the above vulnerability. The original low frequency components used to modulate the ultrasound carrier are demodulated and interpreted by the SR systems due to this effect. The attack we choose to implement is the portable Dolphin Attack which involves attacking mobile phones and laptops by transmitting attack commands from a smart phone over a ultrasonic transducer [2]. This attack is relatively inexpensive and can be launched on the go. The damage that can be caused to the user can be both mental and monetary. Dolphin commands can be used to accomplish benign tasks like prank calls,order takeouts, schedule Uber and range upto malicious monetary transcations. We analyse different implementations of the portable Dolphin attack and evaluate the results. 
   
 </p>
 
@@ -21,7 +21,7 @@ There is an increase in the use of Speech Recognition systems developed by Googl
 
 <p align="justify">
   
-Traditionally, several techniques have been used to attack Speech Recognition and Voice Control Systems. An interesting attack on the early generation Alexa in Amazon Echo was entirely unintentional [2] NPR's weekend edition broadcast a listen up section about Alexa which prompted a number of these devices to respond to the story by turning up the thermostat and shopping online. Carlini et al., chose to attack the speech recognition system by hiding the attack commands such that they can be deciphered by the system but remain incomprehensible to the user [3]. This attack is accomplished in both scenarios, when the attackers have knowledge of the SR system's internal structure and when they do not. This work is based on the work of Vaidya et al which involves mangling normal input commands using an audio mangler. This converts them into morphed sounds which retain the acoustic features of the key words [4]. In CommanderSong, attack commands are embedded in songs which are then used to attack the voice control systems. The wireless channel may also be utilized for command injection [5]. Chaouki et al show that specific electromagnetic interference signals can be coupled with the headphones used with smartphones in order to inject voice commands to the speech recognition systems. The attack closest to the Dolphin attack is the Backdoor Attack [6]. Here, two ultrasonic signals, one carrying the attack command and another pilot tone used for original signal reconstruction, are transmitted to the receiver. The microphone non linearities are ultilized to recover the original attack command and activate the speech recognition system. The major difference between the Backdoor and Dolphin Attacks is the way the non linearities are leveraged to achieve the attack. Backdoor uses two ultrasonic signals and frequency modulation  as opposed to a single voice signal modulated on an ultrasonic carrier in the Dolphin Attack. The Dolphin attack is superior to the above approaches in that it can be accomplished without being noticed by the user, without any commodity hardware and is relatively inexpensive.
+Traditionally, several techniques have been used to attack Speech Recognition and Voice Control Systems. An interesting attack on the early generation Alexa in Amazon Echo was entirely unintentional [3] NPR's weekend edition broadcast a listen up section about Alexa which prompted a number of these devices to respond to the story by turning up the thermostat and shopping online. Carlini et al., chose to attack the speech recognition system by hiding the attack commands such that they can be deciphered by the system but remain incomprehensible to the user [4]. This attack is accomplished in both scenarios, when the attackers have knowledge of the SR system's internal structure and when they do not. This work is based on the work of Vaidya et al which involves mangling normal input commands using an audio mangler. This converts them into morphed sounds which retain the acoustic features of the key words [5]. In CommanderSong, attack commands are embedded in songs which are then used to attack the voice control systems. The wireless channel may also be utilized for command injection [6]. Chaouki et al show that specific electromagnetic interference signals can be coupled with the headphones used with smartphones in order to inject voice commands to the speech recognition systems [7]. The attack closest to the Dolphin attack is the Backdoor Attack [8]. Here, two ultrasonic signals, one carrying the attack command and another pilot tone used for original signal reconstruction, are transmitted to the receiver. The microphone non linearities are ultilized to recover the original attack command and activate the speech recognition system. The major difference between the Backdoor and Dolphin Attacks is the way the non linearities are leveraged to achieve the attack. Backdoor uses two ultrasonic signals and frequency modulation  as opposed to a single voice signal modulated on an ultrasonic carrier in the Dolphin Attack. The Dolphin attack is superior to the above approaches in that it can be accomplished without being noticed by the user, without any commodity hardware and is relatively inexpensive.
   
 </p>
 
@@ -142,7 +142,7 @@ Thus a narrow band transducer is utilized for transmission of the attack signal 
 
 The attack was tested on various victim phones like
 - Oneplus 5
-- Xiomi Redmi Note 4
+- Xiaomi Redmi Note 4
 - Samsung S6 Edge
 - Samsung S7 Edge
 
@@ -232,16 +232,18 @@ We would like to thank Professor Mani Srivastava, Mr. Moustafa and all others at
 # Reference
 [1] https://www.inc.com/kevin-j-ryan/internet-trends-7-most-accurate-word-recognition-platforms.html
 
-[2] https://www.digitaltrends.com/home/amazon-echo-alexa-npr/
+[2] Zhang, Guoming, et al. "Dolphin Attack: Inaudible voice commands." Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security. ACM, 2017.
 
-[3] Carlini, Nicholas, et al. "Hidden Voice Commands." USENIX Security Symposium. 2016.
+[3] https://www.digitaltrends.com/home/amazon-echo-alexa-npr/
 
-[4] Vaidya, Tavish, et al. "Cocaine noodles: exploiting the gap between human and machine speech recognition." WOOT 15 (2015): 10-11.
+[4] Carlini, Nicholas, et al. "Hidden Voice Commands." USENIX Security Symposium. 2016.
 
-[5] Yuan, Xuejing, et al. "CommanderSong: A Systematic Approach for Practical Adversarial Voice Recognition." arXiv preprint arXiv:1801.08535 (2018).
+[5] Vaidya, Tavish, et al. "Cocaine noodles: exploiting the gap between human and machine speech recognition." WOOT 15 (2015): 10-11.
 
-[6] Zhang, Guoming, et al. "Dolphin Attack: Inaudible voice commands." Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security. ACM, 2017.
+[6] Yuan, Xuejing, et al. "CommanderSong: A Systematic Approach for Practical Adversarial Voice Recognition." arXiv preprint arXiv:1801.08535 (2018).
 
-[7] Roy, Nirupam, Haitham Hassanieh, and Romit Roy Choudhury. "BackDoor: Sounds that a microphone can record, but that humans can't hear." GetMobile: Mobile Computing and Communications 21.4 (2018): 25-29.
+[7] Kasmi, Chaouki, and Jose Lopes Esteves. "IEMI threats for information security: Remote command injection on modern smartphones." IEEE Transactions on Electromagnetic Compatibility 57.6 (2015): 1752-1755.
+
+[8] Roy, Nirupam, Haitham Hassanieh, and Romit Roy Choudhury. "BackDoor: Sounds that a microphone can record, but that humans can't hear." GetMobile: Mobile Computing and Communications 21.4 (2018): 25-29.
 
 
