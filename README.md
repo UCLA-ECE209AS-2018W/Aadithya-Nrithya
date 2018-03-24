@@ -176,7 +176,7 @@ We found that the original signal was not reconstructed at the receiver end as e
 
 </p>
 
-The link for the audio jack testing can be found [project website](https://ucla-ece209as-2018w.github.io/Aadithya-Nrithya/)
+The link for the audio jack testing can be found [here](https://ucla-ece209as-2018w.github.io/Aadithya-Nrithya/)
 
 <p align="justify">
 
