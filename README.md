@@ -209,10 +209,15 @@ This was tested for different frequencies, receivers and at different locations 
         <figcaption>Matlab Transmitter Side Analysis for voice </figcaption>
 </figure> 
 
-<p float="left">
-  <img src="plots/3k received signal.PNG" width="380" />
-  <img src="plots/signal_at_receiver.PNG" width="380" />
-</p>
+<figure>
+      <img src="Figures/audacity_receiver_plots.PNG" alt='missing' />
+</figure> 
+
+<figure>
+      <img src="Figures/30k_baseband.PNG" alt='missing' />
+       <figcaption> Harmonics at receiver side for 30K baseband </figcaption>
+</figure> 
+
 
 # Analysis
 
