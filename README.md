@@ -174,7 +174,11 @@ Input voice signals were recorded on the Samsung S7 and amplitude modulated on a
   
 We found that the original signal was not reconstructed at the receiver end as expected. Further analysis of individual components was thus required. The audio jack cable output was connected to an oscilloscope. On sweeping the frequencies given as input to the jack from the phone, over a range of 20 Hz-20 kHz, it was found that the sound was cut off at 14kHz. In order to test if this filtering was done by the phone or the audio jack, the same test was repeated using different phones to find the same effect at the same frequency. Also, it was found that the phone could play 18 kHz and possibly beyond by manual testing using commodity earphones. The stereo jack was replaced by a 3.5mm mono jack and the experiment was repeated. This jack was found to cut off frequencies below 16 kHz. A similar phenomenon was observed in Apple earphones beyond 18kHz.
 
+</p>
+
 The link for the audio jack testing can be found [project website](https://ucla-ece209as-2018w.github.io/Aadithya-Nrithya/)
+
+<p align="justify">
 
 Additionally, the non linearity model for the microphone at the receiver seemed to hold for the speaker on the attack side as well. This hypothesis was tested by connecting a probe from the laptop to the oscilloscope and playing the high frequency signal. Components within the audible range were observed. This caused frequency components in the audible range that hindered the proper recognition of commands, at the receiver end.
   
