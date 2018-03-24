@@ -210,7 +210,7 @@ This was tested for different frequencies, receivers and at different locations 
 </figure> 
 
 <figure>
-      <img src="Figures/audacity_receiver_plots.PNG" alt='missing' />
+      <img src="Figures/revised_receiver.PNG" alt='missing' />
 </figure> 
 
 <figure>
