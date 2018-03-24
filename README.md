@@ -80,7 +80,7 @@ According to the analysis in [1], the cost of implementing the attack through th
 
 At the receiver side, the non linearity present in the device's microphone can be modeled as
 
-- out(t ) = A*sin(t) + B*(sin<sup>2</sup>(t))
+- out(t ) = A*s<sub>in</sub>(t) + B*(s<sub>in</sub><sup>2</sup>(t))
  
 <p align="justify">
 In order to utilize this non linearity to demodulate the the baseband signal, the original voice signal is amplitude modulated using the following function
