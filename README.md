@@ -214,7 +214,7 @@ This was tested for different frequencies, receivers and at different locations 
 </figure> 
 
 <figure>
-      <img src="Figures/30k_baseband.PNG" alt='missing' />
+      <img src="Figures/30k_baseband.PNG" width="300" height="300" />
        <figcaption> Harmonics at receiver side for 30K baseband </figcaption>
 </figure> 
 
